@@ -14,46 +14,41 @@
 
 
 <body>
-<!--: 1ra Fila-->
-  <section id="fila1">
-    <nav class="col-s-4 navbar navbar-expand-sm navbar-dark bg-dark">
-      <!--: Logo-->
+  <!--: 1ra Fila-->
+  <section class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!--: Logo-->
 
-      <div class="row">
-        <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
-      </div>
+        <div class=col-sm-3>
+          <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
+        </div>
 
-      <!--: Buscador-->
+        <!--: Buscador-->
+        <div class=col-sm-6>
+          <form class="d-flex justify-content-center">
+            <input id="bus" class="form-control me-2" type="text" placeholder="Buscar">
+            <button id="btn_bus" class="btn btn-primary" type="button">Search</button>
+          </form>
+        </div>
+        <!--: Iconos-->
 
-      <form class="col-s-4 d-flex justify-content-center">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-      <!--: Iconos-->
+        <div class="col-sm-3 justify-content-right ">
+          <img class="usca" src="img/usuario.png" alt="User">
 
-      <div  class="col-s-4 row">
-        <img class="usca" src="img/usuario.png" alt="User">
+          <img class="usca" src="img/carrito.png" alt="Carro">
+        </div>
 
-        <img class="usca" src="img/carrito.png" alt="Carro">
-      </div>
-
-    </nav>
-  </section>
-
-
-
-
+      </nav>
+    </div>
 
 
-
-
-  <section>
     <div class="row">
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
 
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="#">Nosotros</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -63,21 +58,21 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Cuerda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Percusión</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Viento</a>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Otros</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link</a></li>
-                  <li><a class="dropdown-item" href="#">Another link</a></li>
-                  <li><a class="dropdown-item" href="#">A third link</a></li>
+                  <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="#">Audio</a></li>
+                  <li><a class="dropdown-item" href="#">Repuestos</a></li>
                 </ul>
               </li>
             </ul>
@@ -87,12 +82,171 @@
 
 
     </div>
+    
+    <div class="row navbar-expand-sm ">
+      <div id="demo" class="carousel slide" data-ride="carousel">
 
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/img_1.png" alt="Los Angeles" width="1200" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img_2.png" alt="Chicago" width="1200" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img_3.png" alt="New York" width="1200" height="500">
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div> 
+    <head>
+      <hr>
+      <h1> Productos Destacados</h1>
+      <hr>
+    </head>
+    
+    <div class="row ">
 
+      <div class="card col-sm-3 tarjeta" >
+        <img src="img/venta_1.png" class="card-img-top" alt="">
+        <div class="card-body">
+          <h3 class="card-title"> $659.990 CLP</h3>
+          <p class="card-text"> Descripcion: Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+      </div>
+      <div class="card col-sm-3 tarjeta" >
+        <img src="img/venta_2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $346.990 CLP.</h3>
+          <p class="card-text"> Descripción: Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+      </div>
+      <div class="card col-sm-3 tarjeta">
+        <img src="img/venta_3.png"class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $540.000 CLP.</h3>
+          <p class="card-text"> Descripción: Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+      </div>
+      <div class="card col-sm-3 tarjeta" >
+        <img src="img/venta_4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $290.990 CLP.</h3>
+          <p class="card-text">Descripción: Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+        
+      </div>
+      <div class="card col-sm-3 tarjeta">
+        <img src="img/venta_5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $1.280.990 CLP.</h3>
+          <p class="card-text">Descripción: Some quick example text to build on the card title.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+        
+      </div>
+      <div class="card col-sm-3 tarjeta">
+        <img src="img/venta_9.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $732.990 CLP</h3>
+          <p class="card-text">Descripción: Some quick example text to build on the card title </p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+          
+      </div>
+      <div class="card col-sm-3 tarjeta">
+        <img src="img/venta_8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $832.990 CLP</h3>
+          <p class="card-text">Descripción: Some quick example text to build on the card titl.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+          
+      </div>
+      <div class="card col-sm-3 tarjeta">
+        <img src="img/venta_15.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> $587.990 CLP</h3>
+          <p class="card-text">Descripción: Some quick example text to build on the card titl.</p>
+          <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+        </div>
+          
+      </div>
+    </div>
+    <div class="container-fluid" id="pie">
 
+      <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+      
+    </div>
   </section>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

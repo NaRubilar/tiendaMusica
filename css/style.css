@@ -1,17 +1,49 @@
 
-
+.container{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
 .logo{
-    width: 30%;
+    width: 24%;
 }
 
-.fila2{
-    background-color: black;
+#bus{
+    width: 95%;
+    height: 6vh;
 }
+
+
 
 .usca{
-    width: 8%;
     text-align: right;
+    float: right;
+    width: 13%;
+    margin-right: 8%;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
 
+#demo{
+    padding-left: 0px;
+    padding-right: 0px;
 
+}
+
+.card{
+    padding: 8px;
+    align-self: self-end;
+    border-radius: 4%;
+    margin: auto;
+}
+
+#pie{
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
