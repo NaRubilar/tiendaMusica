@@ -36,7 +36,6 @@
 
 .card{
     padding: 8px;
-    align-self: self-end;
     border-radius: 4%;
     margin: auto;
 }
@@ -46,4 +45,29 @@
     margin-top: 25px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.prod{
+    padding: 8px;
+    align-self: self-end;
+    border-radius: 4%;
+    margin: auto;
+}
+
+.text{
+    left: 45%;
+    bottom: 60vh;
+}
+
+th{
+    text-align: center;
+}
+
+.tabla{
+    bottom: 45vh;
+}
+
+#carru{
+    width: 60%;
+    margin-left: 20%;
 }
