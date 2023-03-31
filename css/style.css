@@ -71,7 +71,7 @@ th {
     width: 100%;
 }
 
-.register{
+.register {
     background-color: rgb(242, 242, 242);
 
 }
@@ -85,40 +85,43 @@ th {
     border: none;
 }
 
-.inireg{
+.inireg {
     margin-top: 1%;
 }
 
-#tar{
-    top:60px;
+#tar {
+    top: 60px;
 }
 
-.nav-link{
+.nav-link {
     color: black;
 }
 
-.titulos{
+.titulos {
     text-align: center;
 }
 
-.redes{
+.redes {
     width: 5%;
 
 }
 
-.btn{
-    text-decoration:none
-
+.btn {
+    text-decoration: none
 }
 
-.btnbonito{
+.btnbonito {
     background-color: #346a86;
 }
 
 
 .btn-primary {
-    --bs-btn-hover-bg: #0e284f;
-    --bs-btn-border-color: #0e284f;
+    /*mouse encima*/
+    --bs-btn-hover-bg: #254e63;
+    /*Borde*/
+    --bs-btn-border-color: #212529;
+    /*Borde mouse encima*/
+    --bs-btn-hover-border-color: #254e63;
 }
 
 
