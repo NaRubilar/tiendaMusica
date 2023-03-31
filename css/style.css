@@ -19,7 +19,7 @@
 .usca{
     text-align: right;
     float: right;
-    width: 13%;
+    width: 20%;
     margin-right: 8%;
 }
 
@@ -70,4 +70,12 @@ th{
 #carru{
     width: 60%;
     margin-left: 20%;
+}
+
+#boton{
+    width: 100%;
+}
+
+.usu{
+    float: left;
 }

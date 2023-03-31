@@ -20,8 +20,9 @@
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <!--: Logo-->
 
-        <div class=col-sm-3>
-          <img class="logo" src="img/Sound-Music-icon.png" alt="Logo"> <link rel="stylesheet" href="index.html">
+        <div class=col-sm-2>
+          <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
+          <link rel="stylesheet" href="index.html">
         </div>
 
         <!--: Buscador-->
@@ -33,15 +34,73 @@
         </div>
         <!--: Iconos-->
 
-        <div class="col-sm-3 justify-content-right ">
-          <img class="usca" src="img/usuario.png" alt="User">
+        <div class="col-sm-2 justify-content-right ">
 
-          <img class="usca" src="img/carrito.png" alt="Carro">
+          <!--Modal ejemplo-->
+
+          <!-- Button trigger modal -->
+          <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
+            data-bs-target="#exampleModal1">
+            <img class="usca" src="img/carrito.png" alt="Carro">
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Otracosa</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 justify-content-right ">
+
+          <!--Modal ejemplo-->
+
+          <!-- Button trigger modal -->
+          <button type="button" id="boton" class="btn btn-primary btn-dark" data-bs-toggle="modal"
+            data-bs-target="#exampleModal2">
+            <img class="usca usu" src="img/usuario.png" alt="User">
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </nav>
     </div>
 
+    <!--: 2da Fila-->
 
     <div class="row">
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -54,7 +113,7 @@
           </button>
 
 
-
+          <!--: Categorias-->
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -80,6 +139,8 @@
         </div>
       </nav>
     </div>
+
+    <!--: Carrusel-->
 
     <div class="row navbar-expand-sm ">
       <div id="demo" class="carousel slide" data-ride="carousel">
@@ -113,6 +174,8 @@
         </a>
       </div>
     </div>
+
+    <!--: Productos-->
 
     <head>
       <hr>
@@ -192,6 +255,9 @@
 
       </div>
     </div>
+
+    <!--: Pie de pagina-->
+
     <div class="container-fluid" id="pie">
 
       <footer class="bg-dark text-center text-white">
@@ -245,6 +311,11 @@
       </footer>
 
     </div>
+
+
+
+
+
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
