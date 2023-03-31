@@ -1,22 +1,20 @@
-
-.container{
+.container {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
     padding: 0;
 }
-.logo{
+
+.logo {
     width: 24%;
 }
 
-#bus{
+#bus {
     width: 95%;
     height: 6vh;
 }
 
-
-
-.usca{
+.usca {
     text-align: right;
     float: right;
     width: 20%;
@@ -26,56 +24,136 @@
 .carousel-inner img {
     width: 100%;
     height: 100%;
-  }
+}
 
-#demo{
+#demo {
     padding-left: 0px;
     padding-right: 0px;
 
 }
 
-.card{
+.card {
     padding: 8px;
     border-radius: 4%;
     margin: auto;
+
 }
 
-#pie{
+#pie {
     padding: 0;
     margin-top: 25px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.prod{
+.prod {
     padding: 8px;
     align-self: self-end;
     border-radius: 4%;
     margin: auto;
 }
 
-.text{
-    left: 45%;
-    bottom: 60vh;
-}
-
-th{
+th {
     text-align: center;
 }
 
-.tabla{
+.tabla {
     bottom: 45vh;
+    margin-top: 2%;
 }
 
-#carru{
+#carru {
     width: 60%;
     margin-left: 20%;
 }
 
-#boton{
+#boton {
     width: 100%;
 }
 
-.usu{
-    float: left;
+.register{
+    background-color: rgb(242, 242, 242);
+
+}
+
+.botton {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+.inireg{
+    margin-top: 1%;
+}
+
+#tar{
+    top:60px;
+}
+
+.nav-link{
+    color: black;
+}
+
+.titulos{
+    text-align: center;
+}
+
+.redes{
+    width: 5%;
+
+}
+
+.btn{
+    text-decoration:none
+
+}
+
+.btnbonito{
+    background-color: #346a86;
+}
+
+
+.btn-primary {
+    --bs-btn-hover-bg: #0e284f;
+    --bs-btn-border-color: #0e284f;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 20%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    img {
+        width: 20%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    img {
+        width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    img {
+        width: 90%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    img {
+        width: 95%;
+    }
 }
