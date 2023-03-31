@@ -36,7 +36,8 @@
 
 .card{
     padding: 8px;
-    border-radius: 4%;
+    border-radius: 3%;
+    border-width: 2px;
     margin: auto;
 }
 
