@@ -10,7 +10,7 @@
 
 /*Logo*/
 .logo {
-    width: 20%;
+    width: 24%;
 }
 
 /*Buscador*/
@@ -18,13 +18,6 @@
     width: 95%;
     height: 6vh;
 }
-
-/*Usuario/Carrito*/
-.usca {
-    width: 20%;
-    margin-right: 8%;
-}
-
 
 /*Carrusel*/
 .carousel-inner img {
@@ -63,6 +56,14 @@
     float:right;
     display: block;
 }
+
+/*Inicio/Registro*/
+
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
@@ -150,7 +151,6 @@ th {
 }
 
 
-
 /*Botones Reg y Log*/
 .btnbonito {
     background-color: #346a86;
@@ -158,14 +158,16 @@ th {
     --bs-nav-pills-link-active-color: #ffffff;
     /*Color Fondo*/
     --bs-nav-pills-link-active-bg:#346a86;
+    --bs-btn-hover-color: #ffffff;
 }
 
 
 .btn-primary {
+
     /*mouse encima*/
     --bs-btn-hover-bg: #254e63;
     /*Borde*/
-    --bs-btn-border-color: #212529;
+    --bs-btn-border-color:none;
     /*Borde mouse encima*/
     --bs-btn-hover-border-color: #254e63;
 }
