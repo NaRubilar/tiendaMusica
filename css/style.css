@@ -1,6 +1,10 @@
 
 /*--Index--*/
 
+
+
+
+
 .container {
     width: 100%;
     margin-right: 0;
@@ -11,6 +15,12 @@
 /*Logo*/
 .logo {
     width: 24%;
+}
+
+/*Logo carro*/
+.logito{
+    width: 6%;
+    float: right;
 }
 
 /*Buscador*/
@@ -49,6 +59,8 @@
     padding: 8px;
     border-radius: 4%;
     margin: auto;
+    display: flex;
+
 
 }
 
@@ -57,14 +69,13 @@
     display: block;
 }
 
+
 /*Inicio/Registro*/
 
 .centro{
     display: flex;
     justify-content: center;
 }
-
-
 
 
 
@@ -171,13 +182,6 @@ th {
     /*Borde mouse encima*/
     --bs-btn-hover-border-color: #254e63;
 }
-
-
-
-
-
-
-
 
 
 

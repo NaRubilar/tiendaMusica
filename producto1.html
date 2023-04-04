@@ -23,7 +23,7 @@
                 <div class="col-sm-2 justify-content-center">
                     <a class="btn " href="index.html" role="button">
                         <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
-                        <button type="button" class="btn " ></button></a>
+                        <button type="button" class="btn "></button></a>
                 </div>
 
                 <!--: Buscador-->
@@ -33,71 +33,37 @@
                         <button id="btn_bus" class="btn btn-primary btnbonito" type="button">Search</button>
                     </form>
                 </div>
-                <!--: Iconos-->
-                <div class="col-sm-2 justify-content-right ">
-
-                    <!--Modal ejemplo-->
-
-                    <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
-                        data-bs-target="#exampleModal1">
-                        <img class="logo" src="img/carrito.png" alt="Carro">
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog carroModal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Otracosa</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae voluptatem
-                                    ullam officia!
-                                    Veritatis, vel eaque. Dignissimos, earum. Voluptatum commodi error dolorem illum id
-                                    natus non animi ex
-                                    eos nisi?
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary btnbonito ">Guardar cambios</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-sm-2 justify-content-right ">
 
-                    <!--Modal ejemplo-->
+                    <!--Modal Usuario-->
 
                     <!-- Button trigger modal -->
                     <button type="button" id="boton" class="btn btn-primary btn-dark" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">
-                        <img class="logo " src="img/usuario.png" alt="User">
+                        <img class="logo" src="img/usuario.png" alt="User">
+
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <link rel="stylesheet" href="login.html">
+                                    </button>
+
                                 </div>
                                 <div class="modal-body centro">
                                     <a class="btn btn-primary btnbonito" href="login.html" role="button">
-                                    <button type="button" class="btn btn-primary btnbonito" >Login</button></a>
+                                        <button type="button" class="btn btn-primary btnbonito">Login</button></a>
                                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                     <a class="btn btn-primary btnbonito" href="registro.html" role="button">
-                                    <button type="button" class="btn btn-primary btnbonito" href="registro.hmtl">Registro</button></a>
+                                        <button type="button" class="btn btn-primary btnbonito"
+                                            href="registro.hmtl">Registro</button></a>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -109,8 +75,95 @@
                     </div>
                 </div>
 
+                <!-- Carro -->
+
+                <div class="col-sm-2 justify-content-right ">
+
+                    <!--Modal Carrito-->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">
+                        <img class="logo" src="img/carrito.png" alt="Carro">
+                        <span class="badge">2</span></button>
+                    </button>
+
+                    <!-- Modal -->
+                    <div>
+                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog carroModal">
+                                <div class="modal-content col-xl">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLabel">Carrito</h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <br>
+
+                                    <div>
+                                        <div class="card mb-3">
+                                            <div class="row g-0">
+                                                <div class="col-md-4 align-self-center">
+                                                    <img src="img/venta_1.png" class="img-fluid rounded-start "
+                                                        alt="..."> </button>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+
+                                                        <p class="card-text"><small class="text-muted">Ibanez</small>
+                                                        </p>
+
+                                                        <hr>
+                                                        <h5 class="card-title">Guitarra eléctrica GRX40</h5>
+
+                                                        &nbsp;
+                                                        <h6 class="card-text">$659.999</h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="card mb-3">
+                                            <div class="row g-0">
+                                                <div class="col-md-4 align-self-center">
+                                                    <img src="img/venta_8.png" class="img-fluid rounded-start"
+                                                        alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+
+                                                        <p class="card-text"><small class="text-muted">Ibanez</small>
+                                                        </p>
+                                                        <hr>
+                                                        <h5 class="card-title">Guitarra eléctrica GRX40</h5>
+
+                                                        &nbsp;
+                                                        <h6 class="card-text">$659.999</h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer centro">
+
+                                            <button type="button" class="btn btn-primary btnbonito ">Ir al
+                                                Carro</button>
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            <h6 class="card-text ">Total: $659.999</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
+
 
         <!--: 2 pagina-->
 
@@ -153,18 +206,14 @@
                 </div>
             </nav>
         </div>
+        <br>
+        <div>
+            <a href="index.html" class="btn btn-primary btnbonito">Regresar</a>
+        </div>
 
         <div class="row">
-
-
-
-
-
             <div class="col-sm-6">
                 <div class="container mt-3">
-
-                    <a href="index.html" class="btn btn-primary btnbonito">Regresar</a>
-
                     <div class="card img-fluid">
                         <!--: Carrusel-->
                         <div id="carru" class="row navbar-expand-sm ">
@@ -271,6 +320,8 @@
             </table>
         </div>
 
+    </section>
+
         <div class="container-fluid" id="pie">
 
             <footer class="bg-dark text-center text-white">
@@ -317,19 +368,13 @@
 
                 <!-- Copyright -->
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2023 Copyright:
+                    Â© 2023 Copyright:
                     <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                 </div>
                 <!-- Copyright -->
             </footer>
 
         </div>
-
-
-
-
-    </section>
-
 
 
 
