@@ -1,10 +1,9 @@
 # tiendaMusica
 
 # Tienda Instrumentos Musicales
-
+<hr>
 <h3>Integrantes:</h3>
-<br>
-
+<hr>
 Diego Isla
 <br>
 Natalia Rubilar
