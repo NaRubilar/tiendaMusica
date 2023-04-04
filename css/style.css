@@ -178,7 +178,9 @@ th {
     --bs-btn-hover-border-color: #254e63;
 }
 
-
+.ic_icon{
+    background-color: rgba(0, 139, 139, 0.578);
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
