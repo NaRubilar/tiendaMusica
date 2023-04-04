@@ -5,6 +5,7 @@
 integrantes:
 
 Diego Isla
+<br>
 Natalia Rubilar
 
 sección 010D
