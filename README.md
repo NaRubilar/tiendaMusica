@@ -2,7 +2,7 @@
 
 # Tienda Instrumentos Musicales
 
-<h5>Integrantes:</h5>
+<h3>Integrantes:</h3>
 
 Diego Isla
 <br>
