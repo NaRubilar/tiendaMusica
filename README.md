@@ -2,10 +2,11 @@
 
 # Tienda Instrumentos Musicales
 
-integrantes:
+<h5>Integrantes:</h5>
 
 Diego Isla
 <br>
 Natalia Rubilar
 
-sección 010D
+
+<li>Sección 010D</li>
