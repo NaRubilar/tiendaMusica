@@ -7,6 +7,6 @@
 Diego Isla
 <br>
 Natalia Rubilar
-
+<br>
 
 <li>Sección 010D</li>
