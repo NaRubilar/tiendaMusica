@@ -1,18 +1,30 @@
 
-#principal{
-    padding: 0;
-}
+/*--Index--*/
+
+
+
+
+
 .container{
     width: 100%;
     margin-right: 0;
     margin-left: 0;
     padding: 0;
 }
-.logo{
+
+/*Logo*/
+.logo {
     width: 24%;
 }
 
-#bus{
+/*Logo carro*/
+.logito{
+    width: 6%;
+    float: right;
+}
+
+/*Buscador*/
+#bus {
     width: 95%;
     height: 6vh;
 }
@@ -25,22 +37,14 @@
     width: 20%;
     margin-right: 8%;
 }
-.carousel-inner{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
 
 .carousel-inner img {
     width: 100%;
     height: 100%;
-    padding-left: 4px;
-    padding-right: 4px;
-
   }
 
-#demo{
+
+#demo {
     padding-left: 0px;
     padding-right: 0px;
 
@@ -48,60 +52,167 @@
 
 .card{
     padding: 8px;
-    border-radius: 3%;
-    border-width: 2px;
+    border-radius: 4%;
     margin: auto;
 }
 
-#pie{
+#pie {
     padding: 0;
     margin-top: 25px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-.prod{
+/*------*/
+
+/*--Index-Productos--*/
+
+.card {
+    padding: 8px;
+    border-radius: 4%;
+    margin: auto;
+    display: flex;
+
+
+}
+
+.carroModal {
+    float:right;
+    display: block;
+}
+
+
+/*Inicio/Registro*/
+
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*------*/
+
+/*
+.prod {
     padding: 8px;
     align-self: self-end;
     border-radius: 4%;
     margin: auto;
 }
+*/
 
-.text{
-    left: 45%;
-    bottom: 60vh;
-}
+/*--Producto--*/
 
-th{
+/*Detalle producto*/
+
+th {
     text-align: center;
 }
 
-.tabla{
+.tabla {
     bottom: 45vh;
+    margin-top: 2%;
 }
 
-#carru{
+
+/*Carrusel*/
+#carru {
     width: 60%;
     margin-left: 20%;
 }
 
-#boton{
-    width: 100%;
+/*Tarjeta*/
+
+
+/*------*/
+
+
+/*--Registro y Login--*/
+.register {
+    background-color: rgb(242, 242, 242);
+
 }
 
-.usu{
-    float: left;
+/*Botones*/
+.botton {
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    color: black;
+    text-align: center;
+    border: none;
+}
+
+/*Formulario*/
+.inireg {
+    margin-top: 1%;
 }
 
 
-.ic_icon{
-    background-color: black;
+
+.nav-link {
+    color: black;
 }
 
-#carrofila2{
-    padding: 0px;
+/*recordar*/
+.titulos {
+    text-align: center;
 }
 
-#columnavacia{
-    padding: 0px;
+/*logos redes*/
+.redes {
+    width: 5%;
+
+}
+
+
+.btn {
+    text-decoration: none;
+}
+
+
+/*Botones Reg y Log*/
+.btnbonito {
+    background-color: #346a86;
+    /*Color letra*/
+    --bs-nav-pills-link-active-color: #ffffff;
+    /*Color Fondo*/
+    --bs-nav-pills-link-active-bg:#346a86;
+    --bs-btn-hover-color: #ffffff;
+}
+
+
+.btn-primary {
+
+    /*mouse encima*/
+    --bs-btn-hover-bg: #254e63;
+    /*Borde*/
+    --bs-btn-border-color:none;
+    /*Borde mouse encima*/
+    --bs-btn-hover-border-color: #254e63;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 20%;
+    }
+
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    img {
+        width: 20%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    img {
+        width: 90%;
+    }
 }
