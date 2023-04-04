@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Carro de Compras</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section id="principal" class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <!--: Logo-->
-    
+
                 <div class=col-sm-2>
                     <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
                     <link rel="stylesheet" href="index.html">
                 </div>
-    
+
                 <!--: Buscador-->
                 <div class=col-sm-6>
                     <form class="d-flex justify-content-center">
@@ -29,17 +32,17 @@
                     </form>
                 </div>
                 <!--: Iconos-->
-    
+
                 <div class="col-sm-2 justify-content-right ">
-    
+
                     <!--Modal ejemplo-->
-    
+
                     <!-- Button trigger modal -->
                     <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
                         data-bs-target="#exampleModal1">
                         <img class="usca" src="img/carrito.png" alt="Carro">
                     </button>
-    
+
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -54,24 +57,25 @@
                                     ...
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
                                     <button type="button" class="btn btn-primary">Guardar cambios</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="col-sm-2 justify-content-right ">
-    
+
                     <!--Modal ejemplo-->
-    
+
                     <!-- Button trigger modal -->
                     <button type="button" id="boton" class="btn btn-primary btn-dark" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">
                         <img class="usca usu" src="img/usuario.png" alt="User">
                     </button>
-    
+
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -87,31 +91,32 @@
                                     <button type="button" class="btn btn-primary">Guardar cambios</button>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-    
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+
             </nav>
         </div>
-    
+
         <!--: 2da Fila-->
-    
+
         <div class="row">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    
-    
+
+
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Nosotros</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-    
-    
+
+
                     <!--: Categorias-->
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
@@ -124,7 +129,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Viento</a>
                             </li>
-    
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown">Otros</a>
@@ -139,60 +144,228 @@
                 </div>
             </nav>
         </div>
-    
+
+        <!--: Carro de Compras-->
+
         <head>
             <hr>
             <h2 class="text-center">Carro de compras (2 productos)</h2>
             <hr>
         </head>
-        <div class="container-fluid row">
-            <div class="col-md-7">
+        <div class="container-fluid row ">
+            <div class="col-sm-7">
                 <div class=" col-12 card">
                     <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img/venta_1.png" class="img-fluid rounded-start" alt="carro1">
+                        <div class="col-md-3">
+                            <img src="img/venta_1.png" class="img-fluid rounded-start fotoCarro" alt="carro1">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-5">
                             <div class="card-body">
-                                <h5 class="card-title">Gitrra Elec. GRX40</h5>
-                                <p class="card-text">La GRX40 es una guitarra eléctrica de cuerpo sólido de la serie RX y
+                                <h5 class="card-text"><small class="text-muted">Ibanez</small>
+                                </h5>
+                                <h5 class="card-title">Guitarra Elec. GRX40</h5>
+                                <p class="card-text">La GRX40 es una guitarra eléctrica de cuerpo sólido de la serie RX
+                                    y
                                     parte de la línea GIO de nivel inicial.</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <h6 class="card-text"><small class="text-muted">Código: 132564785</small>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-text"><small class="text-muted">Precio</small>
+                                </h5>
+                                <h5 class="card-title">
+                                    $659.999
+                                </h5>
+                                <br>
+                                <div class="col-auto my-1">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">Cantidad</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class=" float-right">
+                                    <button type="button" class="btn ">Eliminar
+                                        <link rel="stylesheet" href="index.html">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12  card">
+
+                &nbsp;
+
+                <div class=" col-12 card">
                     <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img/otros1.png" class="img-fluid rounded-start" alt="violin1">
+                        <div class="col-md-3">
+                            <img src="img/otros1.png" class="img-fluid rounded-start fotoCarro" alt="violin1">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-5">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <h5 class="card-text"><small class="text-muted">Rondo</small>
+                                </h5>
+                                <h5 class="card-title">Violín Rondo GV102</h5>
+                                <p class="card-text">Violin Rondo calidad básica, ideal para aquellos personas que
+                                    desean iniciarse en el instrumento..</p>
+                                <h6 class="card-text"><small class="text-muted">Código: 845769235</small>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-text"><small class="text-muted">Precio</small>
+                                </h5>
+                                <h5 class="card-title">
+                                    $350.000
+                                </h5>
+                                <br>
+                                <div class="col-auto my-1">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">Cantidad</label>
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class=" float-right">
+                                    <button type="button" class="btn ">Eliminar
+                                        <link rel="stylesheet" href="index.html">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
 
+
             <div class="col-md-5">
-                
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <br>
+                <h3 class="card-title text-center">Resumen Compra</h3>
+
+                <hr>
+                <div class="row">
+
+
+                    <div class="col-sm-6">
+                        <br>
+
+                        <h5>Guitarra Elec(1) </h5>
+                        <hr>
+                        <h5>Violín Rondo(2) </h5>
+                    </div>
+
+                    <br>
+
+                    <div class="col-sm-6 ">
+                        <br>
+                        <h5>$659.999</h5>
+                        <hr>
+                        <h5>$350.000</h5>
+                        <br>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <hr>
+                        <div class="col-sm-6">
+                            <h3>Total: </h3>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <h3>$1.009.999</h3>
+                        </div>
+
+                        <hr>
+                    </div>
+                    <a href="#" class="btn btn-primary btnbonito ">Comprar</a>
+                </div>
+                <br>
+                <div>
+                    <h3>Opciones de pago</h3>
+                    <p>Medios de pagos que aceptamos</p>
+
+                </div>
+                <div class="row col-sm-12">
+                    <div class="col-sm-6">
+                        <img src="img/webpay.png" alt="web">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="img/mercado-pago.png" alt="merc">
+                    </div>
+
+                </div>
+
+
             </div>
-            
-            
-        </div>
-    
-    
-    
-    
+
     </section>
+
+    <!--: Pie de pagina-->
+
+    <div class="container-fluid" id="pie">
+
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Sign up for our newsletter</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <label class="form-label" for="form5Example2">Email address</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -205,5 +378,7 @@
         crossorigin="anonymous"></script>
 
 
+
 </body>
+
 </html>
