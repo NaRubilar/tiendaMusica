@@ -31,17 +31,10 @@
 
 
 
-.usca{
-    text-align: right;
-    float: right;
-    width: 20%;
-    margin-right: 8%;
-}
-
 .carousel-inner img {
     width: 100%;
     height: 100%;
-  }
+}
 
 
 #demo {
@@ -135,14 +128,6 @@ th {
 }
 
 /*Botones*/
-.botton {
-    height: 80vh;
-    width: 50%;
-    display: flex;
-    color: black;
-    text-align: center;
-    border: none;
-}
 
 /*Formulario*/
 .inireg {
