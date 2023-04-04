@@ -111,9 +111,7 @@ th {
 }
 
 /*Tarjeta*/
-#tar {
-    top: 60px;
-}
+
 
 /*------*/
 
@@ -126,8 +124,8 @@ th {
 
 /*Botones*/
 .botton {
-    height: 100%;
-    width: 100%;
+    height: 80vh;
+    width: 50%;
     display: flex;
     color: black;
     text-align: center;
@@ -190,6 +188,8 @@ th {
     img {
         width: 20%;
     }
+
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -198,7 +198,6 @@ th {
         width: 20%;
     }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     img {
@@ -211,11 +210,11 @@ th {
     img {
         width: 90%;
     }
+    
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     img {
-        width: 95%;
+        width: 90%;
     }
 }
