@@ -14,20 +14,21 @@
 </head>
 
 <body>
+    <!--Centrar: center-align -->
+
     <!--: 1ra Fila-->
-    <section class="container-fluid register">
+    <section class="container-fluid">
         <div class="row">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
                 <!--: Logo-->
 
-                <div class="col-sm-2 justify-content-center">
-                    <a class="btn " href="index.html" role="button">
-                        <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
-                        <button type="button" class="btn "></button></a>
+                <div class="col-2 justify-content-center">
+                    <a class="btn" href="index.html"><img class="logo" src="img/Sound-Music-icon.png" alt="Logo"></a>
                 </div>
 
                 <!--: Buscador-->
-                <div class="col-sm-6">
+                <div class=col-6>
                     <form class="d-flex justify-content-center">
                         <input id="bus" class="form-control me-2" type="text" placeholder="Buscar">
                         <button id="btn_bus" class="btn btn-primary btnbonito" type="button">Search</button>
@@ -35,37 +36,37 @@
                 </div>
                 <!--: Iconos-->
 
-                <div class="col-sm-2 justify-content-right ">
+                <div class="col-2 justify-content-right ">
 
                     <!--Modal Usuario-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">
-                        <img class="logo" src="img/usuario.png" alt="User">
+                        <img class="logo small" src="img/usuario.png" alt="User">
 
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+                                    <h5 class="modal-title">Inicio de Sesion</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                         <link rel="stylesheet" href="login.html">
                                     </button>
 
                                 </div>
                                 <div class="modal-body centro">
-                                    <a class="btn btn-primary btnbonito" href="login.html" role="button">
-                                        <button type="button" class="btn btn-primary btnbonito">Login</button></a>
+                                    <a class="btn btn-primary btnbonito" href="login.html">Login</a>
+
                                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <a class="btn btn-primary btnbonito" href="registro.html" role="button">
-                                        <button type="button" class="btn btn-primary btnbonito"
-                                            href="registro.hmtl">Registro</button></a>
+
+                                    <a class="btn btn-primary btnbonito" href="registro.html">Registro</a>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
@@ -85,20 +86,20 @@
                     <!--Modal Carrito-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary btn-dark " data-bs-toggle="modal"
                         data-bs-target="#exampleModal1">
                         <img class="logo" src="img/carrito.png" alt="Carro">
-                        <span class="badge">2</span></button>
+                        <span class="badge">2</span>
                     </button>
 
                     <!-- Modal -->
                     <div>
-                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1"
                             aria-hidden="true">
                             <div class="modal-dialog carroModal">
                                 <div class="modal-content col-xl">
                                     <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalLabel">Carrito</h2>
+                                        <h2 class="modal-title">Carrito</h2>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -109,19 +110,16 @@
                                             <div class="row g-0">
                                                 <div class="col-md-4 align-self-center">
                                                     <img src="img/venta_1.png" class="img-fluid rounded-start "
-                                                        alt="..."> </button>
+                                                        alt="...">
                                                 </div>
                                                 <div class="col-md-8">
                                                     <div class="card-body">
-
-
 
                                                         <p class="card-text"><small class="text-muted">Ibanez</small>
                                                         </p>
 
                                                         <hr>
                                                         <h5 class="card-title">Guitarra eléctrica GRX40</h5>
-
 
                                                         &nbsp;
                                                         <h6 class="card-text">$659.999</h6>
@@ -141,6 +139,7 @@
                                                 </div>
                                                 <div class="col-md-8">
                                                     <div class="card-body">
+
                                                         <p class="card-text"><small class="text-muted">Ibanez</small>
                                                         </p>
                                                         <hr>
@@ -155,10 +154,9 @@
                                         </div>
                                         <div class="modal-footer centro">
 
-                                            <a class="btn btn-primary btnbonito" href="carro.html" role="button">
-                                                    <button type="button" class="btn btn-primary btnbonito">Ir al
-                                                        Carro
-                                                    </button>
+                                            <a class="btn btn-primary btnbonito" href="carro.html" role="button">Ir al
+                                                Carro
+
                                             </a>
                                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                             <h6 class="card-text ">Total: $659.999</h6>
@@ -171,6 +169,7 @@
                 </div>
             </nav>
         </div>
+
 
         <!--: 2da Fila-->
 
@@ -237,17 +236,14 @@
 
                         <li class="nav-item inireg " role="presentation">
 
-                            <button type="button" class="btn btn-block botton btn-link  ">
-
-                                <a class="nav-link btnbonito " id="tab-login" data-mdb-toggle="pill" href="login.html"
-                                    role="tab" aria-controls="pills-login" aria-selected="false">Login</a></button>
+                                <a class="btn nav-link btnbonito " id="tab-login" data-mdb-toggle="pill" href="login.html"
+                                    role="tab">Login</a>
                         </li>
 
                         <li class="nav-item inireg" role="presentation">
-                            <button type="button" class="btn btn-block botton btn-link  ">
-                                <a class="nav-link active btnbonito" id="tab-register" data-mdb-toggle="pill"
+                                <a class="btn nav-link active btnbonito" id="tab-register" data-mdb-toggle="pill"
                                     href="#pills-register" role="tab" aria-controls="pills-register"
-                                    aria-selected="true">Registro</a></button>
+                                    aria-selected="true">Registro</a>
                         </li>
                     </ul>
                     <!-- Pills navs -->
@@ -282,31 +278,31 @@
 
                             <!-- Name input -->
                             <div class="form-outline mb-4">
-                                <input type="text" id="registerName" class="form-control" />
+                                <input type="text" id="registerName" class="form-control" >
                                 <label class="form-label" for="registerName">Nombre</label>
                             </div>
 
                             <!-- Username input -->
                             <div class="form-outline mb-4">
-                                <input type="text" id="registerUsername" class="form-control" />
+                                <input type="text" id="registerUsername" class="form-control" >
                                 <label class="form-label" for="registerUsername">Apellido</label>
                             </div>
 
                             <!-- Email input -->
                             <div class="form-outline mb-4">
-                                <input type="email" id="registerEmail" class="form-control" />
+                                <input type="email" id="registerEmail" class="form-control" >
                                 <label class="form-label" for="registerEmail">Email</label>
                             </div>
 
                             <!-- Password input -->
                             <div class="form-outline mb-4">
-                                <input type="password" id="registerPassword" class="form-control" />
+                                <input type="password" id="registerPassword" class="form-control" >
                                 <label class="form-label" for="registerPassword">Contraseña</label>
                             </div>
 
                             <!-- Repeat Password input -->
                             <div class="form-outline mb-4">
-                                <input type="password" id="registerRepeatPassword" class="form-control" />
+                                <input type="password" id="registerRepeatPassword" class="form-control" >
                                 <label class="form-label" for="registerRepeatPassword">Repetir Contraseña</label>
                             </div>
 

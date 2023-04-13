@@ -13,58 +13,59 @@
 </head>
 
 <body>
+    <!--Centrar: center-align -->
 
     <!--: 1ra Fila-->
     <section class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
                 <!--: Logo-->
 
-                <div class="col-sm-2 justify-content-center">
-                    <a class="btn " href="index.html" role="button">
-                        <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
-                        <button type="button" class="btn "></button></a>
+                <div class="col-2 justify-content-center">
+                    <a class="btn" href="index.html"><img class="logo" src="img/Sound-Music-icon.png" alt="Logo"></a>
                 </div>
 
                 <!--: Buscador-->
-                <div class=col-sm-6>
+                <div class=col-6>
                     <form class="d-flex justify-content-center">
                         <input id="bus" class="form-control me-2" type="text" placeholder="Buscar">
                         <button id="btn_bus" class="btn btn-primary btnbonito" type="button">Search</button>
                     </form>
                 </div>
+                <!--: Iconos-->
 
-                <div class="col-sm-2 justify-content-right ">
+                <div class="col-2 justify-content-right ">
 
                     <!--Modal Usuario-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">
-                        <img class="logo" src="img/usuario.png" alt="User">
+                        <img class="logo small" src="img/usuario.png" alt="User">
 
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+                                    <h5 class="modal-title">Inicio de Sesion</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                         <link rel="stylesheet" href="login.html">
                                     </button>
 
                                 </div>
                                 <div class="modal-body centro">
-                                    <a class="btn btn-primary btnbonito" href="login.html" role="button">
-                                        <button type="button" class="btn btn-primary btnbonito">Login</button></a>
+                                    <a class="btn btn-primary btnbonito" href="login.html">Login</a>
+
                                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <a class="btn btn-primary btnbonito" href="registro.html" role="button">
-                                        <button type="button" class="btn btn-primary btnbonito"
-                                            href="registro.hmtl">Registro</button></a>
+
+                                    <a class="btn btn-primary btnbonito" href="registro.html">Registro</a>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
@@ -75,6 +76,8 @@
                     </div>
                 </div>
 
+
+
                 <!-- Carro -->
 
                 <div class="col-sm-2 justify-content-right ">
@@ -82,20 +85,20 @@
                     <!--Modal Carrito-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary btn-dark " data-bs-toggle="modal"
                         data-bs-target="#exampleModal1">
                         <img class="logo" src="img/carrito.png" alt="Carro">
-                        <span class="badge">2</span></button>
+                        <span class="badge">2</span>
                     </button>
 
                     <!-- Modal -->
                     <div>
-                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1"
                             aria-hidden="true">
                             <div class="modal-dialog carroModal">
                                 <div class="modal-content col-xl">
                                     <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalLabel">Carrito</h2>
+                                        <h2 class="modal-title">Carrito</h2>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -106,7 +109,7 @@
                                             <div class="row g-0">
                                                 <div class="col-md-4 align-self-center">
                                                     <img src="img/venta_1.png" class="img-fluid rounded-start "
-                                                        alt="..."> </button>
+                                                        alt="...">
                                                 </div>
                                                 <div class="col-md-8">
                                                     <div class="card-body">
@@ -150,10 +153,9 @@
                                         </div>
                                         <div class="modal-footer centro">
 
-                                            <a class="btn btn-primary btnbonito" href="carro.html" role="button">
-                                                <button type="button" class="btn btn-primary btnbonito">Ir al
-                                                    Carro
-                                                </button>
+                                            <a class="btn btn-primary btnbonito" href="carro.html" role="button">Ir al
+                                                Carro
+
                                             </a>
                                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                             <h6 class="card-text ">Total: $659.999</h6>
@@ -168,7 +170,7 @@
         </div>
 
 
-        <!--: 2 pagina-->
+        <!--: 2da Fila-->
 
         <div class="row">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -182,7 +184,7 @@
                     </button>
 
 
-
+                    <!--: Categorias-->
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -261,7 +263,7 @@
             <div class=" col-sm-6">
                 <div class="container mt-3">
 
-                    <di class="card img-fluid" style="width:500px">
+                    <div class="card img-fluid" style="width:500px">
                         <h4 class="card-title">Guitarra eléctrica Ibanez GRX40</h4>
                         <hr>
 
@@ -275,54 +277,57 @@
                         <br>
                         <a href="#" class="btn btn-primary btnbonito">COMPRAR</a>
 
+                    </div>
                 </div>
             </div>
+
+
+
+            <div class="tabla row">
+
+                <div>
+                    <h3>Detalle producto</h3>
+                </div>
+                <br>
+                <br>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Color</th>
+                            <td>Candy Apple (CA)</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Escala</th>
+                            <td>648mm</td>
+                        </tr>
+                        <tr>
+                            <th>Trastes</th>
+                            <td>22 Medium</td>
+                        </tr>
+                        <tr>
+                            <th>Marca</th>
+                            <td>Ibanez</td>
+                        </tr>
+                        <tr>
+                            <th>Cápsulas</th>
+                            <td>Infinity R (En puente. Humbucker), Infinity RS (en cuello y central. Simples).
+                                Configuración
+                                HSS, Passive/Ceramic</td>
+                        </tr>
+                        <tr>
+                            <th>Controles</th>
+                            <td>Volumen / Tono / selector de 5 vías</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
         </div>
-        </div>
-
-
-        <div class="tabla row">
-
-            <head>
-                <h3>Detalle producto</h3>
-            </head>
-            <br>
-            <br>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Color</th>
-                        <td>Candy Apple (CA)</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Escala</th>
-                        <td>648mm</td>
-                    </tr>
-                    <tr>
-                        <th>Trastes</th>
-                        <td>22 Medium</td>
-                    </tr>
-                    <tr>
-                        <th>Marca</th>
-                        <td>Ibanez</td>
-                    </tr>
-                    <tr>
-                        <th>Cápsulas</th>
-                        <td>Infinity R (En puente. Humbucker), Infinity RS (en cuello y central. Simples). Configuración
-                            HSS, Passive/Ceramic</td>
-                    </tr>
-                    <tr>
-                        <th>Controles</th>
-                        <td>Volumen / Tono / selector de 5 vías</td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-
     </section>
+
+    <!--: Pie de pagina-->
 
     <div class="container-fluid" id="pie">
 
@@ -330,8 +335,8 @@
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Form -->
-                <section class="">
-                    <form action="">
+                <div>
+                    <form action="/login.html">
                         <!--Grid row-->
                         <div class="row d-flex justify-content-center">
                             <!--Grid column-->
@@ -346,7 +351,7 @@
                             <div class="col-md-5 col-12">
                                 <!-- Email input -->
                                 <div class="form-outline form-white mb-4">
-                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <input type="email" id="form5Example2" class="form-control">
                                     <label class="form-label" for="form5Example2">Email address</label>
                                 </div>
                             </div>
@@ -363,21 +368,21 @@
                         </div>
                         <!--Grid row-->
                     </form>
-                </section>
+
+                </div>
                 <!-- Section: Form -->
             </div>
             <!-- Grid container -->
 
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                Â© 2023 Copyright:
+                © 2023 Copyright:
                 <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
             <!-- Copyright -->
         </footer>
 
     </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

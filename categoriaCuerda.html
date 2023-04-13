@@ -14,20 +14,21 @@
 </head>
 
 <body>
-    <section id="principal" class="container-fluid">
+    <!--Centrar: center-align -->
+
+    <!--: 1ra Fila-->
+    <section class="container-fluid">
         <div class="row">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
                 <!--: Logo-->
 
-                <div class="col-sm-2 justify-content-center">
-                    <a class="btn " href="index.html" role="button">
-                        <img class="logo" src="img/Sound-Music-icon.png" alt="Logo">
-                        <button type="button" class="btn "></button></a>
+                <div class="col-2 justify-content-center">
+                    <a class="btn" href="index.html"><img class="logo" src="img/Sound-Music-icon.png" alt="Logo"></a>
                 </div>
 
                 <!--: Buscador-->
-                <div class=col-sm-6>
+                <div class=col-6>
                     <form class="d-flex justify-content-center">
                         <input id="bus" class="form-control me-2" type="text" placeholder="Buscar">
                         <button id="btn_bus" class="btn btn-primary btnbonito" type="button">Search</button>
@@ -35,37 +36,37 @@
                 </div>
                 <!--: Iconos-->
 
-                <div class="col-sm-2 justify-content-right ">
+                <div class="col-2 justify-content-right ">
 
                     <!--Modal Usuario-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal"
                         data-bs-target="#exampleModal2">
-                        <img class="logo" src="img/usuario.png" alt="User">
+                        <img class="logo small" src="img/usuario.png" alt="User">
 
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade " id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesion</h5>
+                                    <h5 class="modal-title">Inicio de Sesion</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                         <link rel="stylesheet" href="login.html">
                                     </button>
 
                                 </div>
                                 <div class="modal-body centro">
-                                    <a class="btn btn-primary btnbonito" href="login.html" role="button">
-                                        <button type="button" class="btn btn-primary btnbonito">Login</button></a>
+                                    <a class="btn btn-primary btnbonito" href="login.html">Login</a>
+
                                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <a class="btn btn-primary btnbonito" href="registro.html" role="button">
-                                        <button type="button" class="btn btn-primary btnbonito"
-                                            href="registro.hmtl">Registro</button></a>
+
+                                    <a class="btn btn-primary btnbonito" href="registro.html">Registro</a>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
@@ -85,20 +86,20 @@
                     <!--Modal Carrito-->
 
                     <!-- Button trigger modal -->
-                    <button type="button" id="boton" class="btn btn-primary btn-dark " data-bs-toggle="modal"
+                    <button type="button" class="btn btn-primary btn-dark " data-bs-toggle="modal"
                         data-bs-target="#exampleModal1">
                         <img class="logo" src="img/carrito.png" alt="Carro">
-                        <span class="badge">2</span></button>
+                        <span class="badge">2</span>
                     </button>
 
                     <!-- Modal -->
                     <div>
-                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1"
                             aria-hidden="true">
                             <div class="modal-dialog carroModal">
                                 <div class="modal-content col-xl">
                                     <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalLabel">Carrito</h2>
+                                        <h2 class="modal-title">Carrito</h2>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -109,7 +110,7 @@
                                             <div class="row g-0">
                                                 <div class="col-md-4 align-self-center">
                                                     <img src="img/venta_1.png" class="img-fluid rounded-start "
-                                                        alt="..."> </button>
+                                                        alt="...">
                                                 </div>
                                                 <div class="col-md-8">
                                                     <div class="card-body">
@@ -153,10 +154,9 @@
                                         </div>
                                         <div class="modal-footer centro">
 
-                                            <a class="btn btn-primary btnbonito" href="carro.html" role="button">
-                                                <button type="button" class="btn btn-primary btnbonito">Ir al
-                                                    Carro
-                                                </button>
+                                            <a class="btn btn-primary btnbonito" href="carro.html" role="button">Ir al
+                                                Carro
+
                                             </a>
                                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                             <h6 class="card-text ">Total: $659.999</h6>
@@ -169,6 +169,7 @@
                 </div>
             </nav>
         </div>
+
 
         <!--: 2da Fila-->
 
@@ -211,12 +212,13 @@
                 </div>
             </nav>
         </div>
+
         <div>
             <br>
 
-            <head>
+            <div>
                 <h3 class="text-center">Instrumentos de cuerda</h3>
-            </head>
+            </div>
             <hr>
             <h4 class="text-center">Guitarras Acusticas</h4>
             <br>
@@ -229,46 +231,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu1.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Colores yamaha </h6>
-                                    <p> $45.200 </p>
+
+                                <hr>
+                                <h6>Guitarra Colores yamaha </h6>
+                                <p> $45.200 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu2.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica GT-640</h6>
-                                    <p>$ 32.590 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica GT-640</h6>
+                                <p>$ 32.590 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu3.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica Estuche</h6>
-                                    <p>$ 53.690 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica Estuche</h6>
+                                <p>$ 53.690 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu4.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica GA-740</h6>
-                                    <p>$ 65.590 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica GA-740</h6>
+                                <p>$ 65.590 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu5.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica black</h6>
-                                    <p>$ 90.590 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica black</h6>
+                                <p>$ 90.590 </p>
                             </div>
                         </div>
                     </div>
@@ -278,46 +280,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu6.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica Rosa VT4</h6>
-                                    <p>$ 64.780</p>
+
+                                <hr>
+                                <h6>Guitarra Acustica Rosa VT4</h6>
+                                <p>$ 64.780</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu7.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica Geree</h6>
-                                    <p>$ 32.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica Geree</h6>
+                                <p>$ 32.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu8.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica GA-540</h6>
-                                    <p>$ 65.590 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica GA-540</h6>
+                                <p>$ 65.590 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu9.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica AG-840</h6>
-                                    <p>$ 73.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica AG-840</h6>
+                                <p>$ 73.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-text">
                                 <img src="img/acu10.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Acustica GT-240</h6>
-                                    <p>$ 26.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Acustica GT-240</h6>
+                                <p>$ 26.990 </p>
                             </div>
                         </div>
                     </div>
@@ -350,46 +352,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit1.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica AP-90</h6>
-                                    <p>$ 80.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica AP-90</h6>
+                                <p>$ 80.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit2.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Kit Guitarra Electrica CP-98</h6>
-                                    <p>$ 220.990 </p>
+
+                                <hr>
+                                <h6>Kit Guitarra Electrica CP-98</h6>
+                                <p>$ 220.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit3.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Pack Guitarra Electrica Circle</h6>
-                                    <p>$ 120.000 </p>
+
+                                <hr>
+                                <h6>Pack Guitarra Electrica Circle</h6>
+                                <p>$ 120.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit4.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica Azul-4</h6>
-                                    <p>$ 95.000 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica Azul-4</h6>
+                                <p>$ 95.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit5.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica Rojiza</h6>
-                                    <p>$ 75.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica Rojiza</h6>
+                                <p>$ 75.990 </p>
                             </div>
                         </div>
                     </div>
@@ -399,46 +401,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit6.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica Star-89</h6>
-                                    <p>$ 199.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica Star-89</h6>
+                                <p>$ 199.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit7.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica CP-98</h6>
-                                    <p>$ 220.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica CP-98</h6>
+                                <p>$ 220.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit8.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica CP-Rose</h6>
-                                    <p>$ 77.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica CP-Rose</h6>
+                                <p>$ 77.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit9.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica Tiger-7</h6>
-                                    <p>$ 200.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica Tiger-7</h6>
+                                <p>$ 200.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/guit10.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarra Electrica Pack-PL</h6>
-                                    <p>$ 220.990 </p>
+
+                                <hr>
+                                <h6>Guitarra Electrica Pack-PL</h6>
+                                <p>$ 220.990 </p>
                             </div>
                         </div>
                     </div>
@@ -471,46 +473,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano1.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano de silla, Rondo-a5</h6>
-                                    <p>$ 1.780.990 </p>
+
+                                <hr>
+                                <h6>Piano de silla, Rondo-a5</h6>
+                                <p>$ 1.780.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano2.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano Cajonera-12</h6>
-                                    <p>$ 562.678 </p>
+
+                                <hr>
+                                <h6>Piano Cajonera-12</h6>
+                                <p>$ 562.678 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano3.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano chiquito EP</h6>
-                                    <p>$ 25.600 </p>
+
+                                <hr>
+                                <h6>Piano chiquito EP</h6>
+                                <p>$ 25.600 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano4.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano Hueco D4-Flash</h6>
-                                    <p>$ 740.000</p>
+
+                                <hr>
+                                <h6>Piano Hueco D4-Flash</h6>
+                                <p>$ 740.000</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano5.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano pedalero PL2</h6>
-                                    <p>$ 480.990 </p>
+
+                                <hr>
+                                <h6>Piano pedalero PL2</h6>
+                                <p>$ 480.990 </p>
                             </div>
                         </div>
                     </div>
@@ -520,46 +522,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano6.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano de principiante</h6>
-                                    <p>$ 100.890 </p>
+
+                                <hr>
+                                <h6>Piano de principiante</h6>
+                                <p>$ 100.890 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano7.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano Digital Principal</h6>
-                                    <p>$ 230.543 </p>
+
+                                <hr>
+                                <h6>Piano Digital Principal</h6>
+                                <p>$ 230.543 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano8.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano Red Electronico</h6>
-                                    <p>$ 210.450 </p>
+
+                                <hr>
+                                <h6>Piano Red Electronico</h6>
+                                <p>$ 210.450 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano9.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano Elec. black-0</h6>
-                                    <p>$ 546.000 </p>
+
+                                <hr>
+                                <h6>Piano Elec. black-0</h6>
+                                <p>$ 546.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/piano10.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Piano Microfono niño</h6>
-                                    <p>$ 35.000 </p>
+
+                                <hr>
+                                <h6>Piano Microfono niño</h6>
+                                <p>$ 35.000 </p>
                             </div>
                         </div>
                     </div>
@@ -592,46 +594,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros1.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Violin Roble-40</h6>
-                                    <p>$ 780.990 </p>
+
+                                <hr>
+                                <h6>Violin Roble-40</h6>
+                                <p>$ 780.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros2.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Ukulele classic-12</h6>
-                                    <p>$ 40.000 </p>
+
+                                <hr>
+                                <h6>Ukulele classic-12</h6>
+                                <p>$ 40.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros3.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Charango dos Colores</h6>
-                                    <p>$ 56.000 </p>
+
+                                <hr>
+                                <h6>Charango dos Colores</h6>
+                                <p>$ 56.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros4.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Mandolina Ettinger L-56</h6>
-                                    <p>$ 30.500 </p>
+
+                                <hr>
+                                <h6>Mandolina Ettinger L-56</h6>
+                                <p>$ 30.500 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros5.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Violin stradivarius</h6>
-                                    <p>$ 2.980.990 </p>
+
+                                <hr>
+                                <h6>Violin stradivarius</h6>
+                                <p>$ 2.980.990 </p>
                             </div>
                         </div>
                     </div>
@@ -641,46 +643,46 @@
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros6.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Mini Guitarra 4Q</h6>
-                                    <p>$ 1.780.990 </p>
+
+                                <hr>
+                                <h6>Mini Guitarra 4Q</h6>
+                                <p>$ 1.780.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros7.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Violonchelo elo elo</h6>
-                                    <p>$ 2.880.990 </p>
+
+                                <hr>
+                                <h6>Violonchelo elo elo</h6>
+                                <p>$ 2.880.990 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros8.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Banjo-Ludu UY5</h6>
-                                    <p>$ 87.000 </p>
+
+                                <hr>
+                                <h6>Banjo-Ludu UY5</h6>
+                                <p>$ 87.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros9.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Paltita Acustica Pro5</h6>
-                                    <p>$ 789.000 </p>
+
+                                <hr>
+                                <h6>Paltita Acustica Pro5</h6>
+                                <p>$ 789.000 </p>
                             </div>
                         </div>
                         <div class="col">
                             <div class=" card py-4 text-black card-center">
                                 <img src="img/otros10.png" class="card-img-top" alt="">
-                                <hb>
-                                    <hr>
-                                    <h6>Guitarrita responsiva</h6>
-                                    <p>$ 189.000 </p>
+
+                                <hr>
+                                <h6>Guitarrita responsiva</h6>
+                                <p>$ 189.000 </p>
                             </div>
                         </div>
                     </div>
@@ -702,14 +704,17 @@
 
     </section>
 
+
+    <!--: Pie de pagina-->
+
     <div class="container-fluid" id="pie">
 
         <footer class="bg-dark text-center text-white">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Form -->
-                <section class="">
-                    <form action="">
+                <div>
+                    <form action="/login.html">
                         <!--Grid row-->
                         <div class="row d-flex justify-content-center">
                             <!--Grid column-->
@@ -724,7 +729,7 @@
                             <div class="col-md-5 col-12">
                                 <!-- Email input -->
                                 <div class="form-outline form-white mb-4">
-                                    <input type="email" id="form5Example2" class="form-control" />
+                                    <input type="email" id="form5Example2" class="form-control">
                                     <label class="form-label" for="form5Example2">Email address</label>
                                 </div>
                             </div>
@@ -741,7 +746,8 @@
                         </div>
                         <!--Grid row-->
                     </form>
-                </section>
+
+                </div>
                 <!-- Section: Form -->
             </div>
             <!-- Grid container -->
