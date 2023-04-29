@@ -276,40 +276,104 @@
 
                             <p class="text-center">o:</p>
 
-                            <!-- Name input -->
-                            <div class="form-outline mb-4">
-                                <input type="text" id="registerName" class="form-control" >
-                                <label class="form-label" for="registerName">Nombre</label>
-                            </div>
 
-                            <!-- Username input -->
-                            <div class="form-outline mb-4">
-                                <input type="text" id="registerUsername" class="form-control" >
-                                <label class="form-label" for="registerUsername">Apellido</label>
-                            </div>
+                            <!-- Nombre y Apellidos -->
+                            <div class="row">
+                                <div class="col">
+                                    <!--Nombre -->
+                                    <input type="text" id="nombre" class="form-control">
+                                    <label class="form-label" >Nombre </label>
+                                </div>
 
-                            <!-- Email input -->
-                            <div class="form-outline mb-4">
-                                <input type="email" id="registerEmail" class="form-control" >
-                                <label class="form-label" for="registerEmail">Email</label>
-                            </div>
+                                <!-- Apellido Paterno -->
+                                <div class="col">
+                                    <input type="text" id="apellidoPa" class="form-control">
+                                    <label class="form-label" >Apellido Paterno </label>
+                                </div>
 
-                            <!-- Password input -->
-                            <div class="form-outline mb-4">
-                                <input type="password" id="registerPassword" class="form-control" >
-                                <label class="form-label" for="registerPassword">Contraseña</label>
+                                <!-- Apellidos Materno -->
+                                <div class="col">
+                                    <input type="text" id="apellidoMa" class="form-control">
+                                    <label class="form-label" >Apellidos Materno</label>
+                                </div>
                             </div>
+                            &nbsp;
 
-                            <!-- Repeat Password input -->
-                            <div class="form-outline mb-4">
-                                <input type="password" id="registerRepeatPassword" class="form-control" >
-                                <label class="form-label" for="registerRepeatPassword">Repetir Contraseña</label>
-                            </div>
+                            <!-- Correo y Rut -->
+                            <div class="row">
+                                <!-- Correo -->
+                                <div class="col">
+                                    <input type="email" id="correo" class="form-control">
+                                    <label class="form-label" >Correo</label>
+                                </div>
 
-                            <div class="col-md-6 d-flex justify-content-left">
-                                <!-- Simple link -->
-                                <a href="#!">Agregar metodo de pago</a>
+                                <!-- Rut -->
+                                <div class="col">
+                                    <input type="text" id="rut" class="form-control">
+                                    <label class="form-label" >Rut </label>
+                                </div>
                             </div>
+                            &nbsp;
+
+                            <!-- Edad y Genero -->
+                            <div class="row ">
+                                <!-- Edad -->
+                                <div class="col">
+                                    <input type="text" id="edad" class="form-control">
+                                    <label class="form-label" >Edad </label>
+                                </div>
+
+                                <!-- Genero-->
+                                <div class="row col">
+                                    <h4>Genero</h4>
+                                    <div class="col">
+                                        <input type="radio" id="men" name="fav_language" value="Masculino">
+                                        <label for="men">Masculino</label><br>
+                                    </div>
+                                    <div class="col">
+                                        <input type="radio" id="women" name="fav_language" value="Femenino">
+                                        <label for="women">Femenino</label><br>
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="radio" id="other" name="fav_language" value="Otro">
+                                        <label for="other">Otro</label><br>
+                                    </div>
+                                </div>
+                            </div>
+                            &nbsp;
+
+                            <!-- Celular y Fecha Nac -->
+                            <div class="row">
+                                <!-- Celular -->
+                                <div class="col">
+                                    <input type="text" id="celular" class="form-control">
+                                    <label class="form-label" >Celular </label>
+                                </div>
+
+                                <!-- Fecha Nacimiento -->
+                                <div class="col">
+                                    <input type="date" id="fechNac" name="trip-start" value="2023-04-28" min="1907-03-04" max="2023-04-28">
+                                    <label class="form-label" >Fecha Nacimiento</label>
+                                </div>
+                            </div>
+                            &nbsp;
+
+                            <!-- Contraseña -->
+                            <div class="row">
+                                <!-- Contraseña -->
+                                <div class="col">
+                                    <input type="password" id="contraseña" class="form-control" >
+                                    <label class="form-label" >Contraseña</label>
+                                </div>
+
+                                <!-- Repetir Contraseña -->
+                                <div class="col">
+                                    <input type="password" id="repetirContraseña" class="form-control" >
+                                    <label class="form-label" >Repetir Contraseña</label>
+                                </div>
+                            </div>
+                            <br>
 
                             <!-- Checkbox -->
                             <div class="form-group form-check titulos">
@@ -318,6 +382,7 @@
                                 </label>
                             </div>
                             <br>
+
 
 
                             <!-- Submit button -->
@@ -348,6 +413,7 @@
 
 
 
+    <script src="java/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
