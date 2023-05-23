@@ -18,20 +18,23 @@ function validarFormulario() {
   var celular = document.getElementById("celular").value;
   var contrasena = document.getElementById("contrasena").value;
   var repetirContrasena = document.getElementById("repetirContrasena").value;
-
   // Validar cada campo del formulario
 
-  // Validación nombre
+
+  // --Validación nombre--
+
   // Campo vacio
   if (nombre === "") {
     alert("Por favor, ingrese un nombre valido.");
     return;
   }
-  // Solo letras 
+  // Solo letras
   if (!/^[a-zA-Z]+$/.test(nombre)) {
     alert("El nombre debe contener solo letras.");
     return;
   }
+
+  // --Validación ApellidoPa--
 
   // ApellidoPa vacio
   if (apellidoPaterno === "") {
@@ -43,6 +46,10 @@ function validarFormulario() {
     alert("El nombre debe contener solo letras.");
     return;
   }
+
+
+  // --Validación ApellidoMa--
+
   // ApellidoMa Vacio
   if (apellidoMaterno === "") {
     alert("Por favor, ingresa tu apellido materno.");
@@ -53,6 +60,16 @@ function validarFormulario() {
     alert("El nombre debe contener solo letras.");
     return;
   }
+
+  // --Validación Correo--
+
+  if (correoElectronico.indexOf("@") === -1 || correoElectronico.indexOf(".") === -1) {
+    alert("El correo electrónico debe contener un símbolo de arroba (@) y un punto (.)");
+    return;
+  }
+
+  // --Validación Rut--
+
   // Validar longitud mínima de 9 caracteres
   if (rut.length < 9) {
     alert("El Rut debe tener al menos 9 caracteres.");
@@ -64,6 +81,8 @@ function validarFormulario() {
     alert("El Rut debe contener un guion.");
     return;
   }
+
+  // --Validación Edad--
 
   if (!/^[0-9]+$/.test(edad)) {
     this.value = "";
@@ -79,6 +98,9 @@ function validarFormulario() {
 
   }
 
+  // --Validación Genero--
+
+  // Validar que haya algo seleccionado
   var seleccionado = false;
   for (var i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
@@ -93,21 +115,30 @@ function validarFormulario() {
     return false;
   }
 
-  if (fechaNacimiento === "") {
-    alert("Por favor, ingresa tu fecha de nacimiento.");
-    return;
-  }
-
-  if (correoElectronico.indexOf("@") === -1 || correoElectronico.indexOf(".") === -1) {
-    alert("El correo electrónico debe contener un símbolo de arroba (@) y un punto (.)");
-    return;
-  }
+  //Validar Numero de Celular
 
   if (celular === "") {
     alert("Por favor, ingresa tu número de celular.");
     return;
   }
-  // Validar contraseña 
+
+  // Validación solo numeros
+
+  if (!/^[0-9]+$/.test(celular)) {
+    this.value = "";
+    alert("El Celular debe contener solo números.");
+    return;
+  }
+
+  // Validar longitud mínima de 9 caracteres
+  if (celular.length < 8) {
+    alert("El Celular debe tener al menos 8 caracteres.");
+    return;
+  }
+
+  // --Validación Contraseña--
+
+  // Validar contraseña
   if (contrasena.length < 8) {
     alert("La contraseña debe tener al menos 8 caracteres.");
     return;
@@ -130,6 +161,8 @@ function validarFormulario() {
     alert("La contraseña debe contener al menos un símbolo.");
     return;
   }
+
+  // --Validación Contraseña repetida--
 
   if (contrasena !== repetirContrasena) {
     alert("Las contraseñas no coinciden.");
