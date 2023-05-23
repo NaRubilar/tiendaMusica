@@ -53,6 +53,12 @@ function validarFormulario() {
         alert("El nombre debe contener solo letras.");
         return ;
     }
+    
+    if (correoElectronico.indexOf("@") === -1 || correoElectronico.indexOf(".") === -1) {
+        alert("El correo electrónico debe contener un símbolo de arroba (@) y un punto (.)");
+        return ;
+    }
+  
      // Validar longitud mínima de 9 caracteres
      if (rut.length < 9) {
         alert("El Rut debe tener al menos 9 caracteres.");
@@ -92,10 +98,10 @@ function validarFormulario() {
       alert("Debes seleccionar una opción en genero.");
       return false;
     }
-  
-    if (fechaNacimiento === "") {
-      alert("Por favor, ingresa tu fecha de nacimiento.");
-      return ;
+    
+    if (celular === "") {
+        alert("Por favor, ingresa tu número de celular.");
+        return ;
     }
   
     if (correoElectronico.indexOf("@") === -1 || correoElectronico.indexOf(".") === -1) {
@@ -103,10 +109,7 @@ function validarFormulario() {
         return ;
       }
   
-    if (celular === "") {
-      alert("Por favor, ingresa tu número de celular.");
-      return ;
-    }
+  
     // Validar contraseña 
     if (contrasena.length < 8) {
         alert("La contraseña debe tener al menos 8 caracteres.");
@@ -138,5 +141,71 @@ function validarFormulario() {
   
     // Si todos los campos son válidos, se puede enviar el formulario
     return true;
-  }
+}
+    
+    function validarLogin() {
+        var usuario = document.getElementById("loginName").value;
+        var contraseña = document.getElementById("loginPassword").value;
+      
+        // Validar que los campos no estén vacíos
+        if (usuario === "" || contraseña === "") {
+          alert("Por favor, ingresa el usuario y la contraseña.");
+          return false;
+        }
+      
+        // Validar las credenciales
+        // Aquí puedes agregar tu lógica para comparar las credenciales ingresadas con las válidas
+        if (usuario === "na.rubilar@gmail.com" && contraseña === "narubilar123") {
+          alert("Inicio de sesión exitoso.");
+          window.location.href = "index.html";
+          return true;
+        } else {
+          alert("Usuario o contraseña incorrectos. Por favor, intenta nuevamente.");
+          return false;
+        }
+    }
+      
+       
+/*
+
+    // Extra small devices (phones, 600px and down) 
+    @media only screen and (max-width: 600px) {
+    img {
+        width: 20%;
+    }
+
+    
+    }
+
+    // Small devices (portrait tablets and large phones, 600px and up) 
+    @media only screen and (min-width: 600px) {
+    img {
+        width: 20%;
+    }
+    }
+    // Medium devices (landscape tablets, 768px and up) 
+    @media only screen and (min-width: 768px) {
+    img {
+        width: 90%;
+    }
+    } 
+
+*/
+
+/*
+$(window).on("resize", function() {
+    ajustarImagenesResponsivas();
+  });
   
+  $(document).ready(function() {
+    ajustarImagenesResponsivas();
+  });
+  
+  function ajustarImagenesResponsivas() {
+    $("img").each(function() {
+      $(this).css("max-width", "100%");
+      $(this).css("height", "auto");
+    });
+  }
+*/
+ 
