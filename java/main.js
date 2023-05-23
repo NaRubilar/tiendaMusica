@@ -98,78 +98,140 @@ function validarFormulario() {
 
   }
 
-  // --Validación Genero--
-
-  // Validar que haya algo seleccionado
-  var seleccionado = false;
-  for (var i = 0; i < radios.length; i++) {
-    if (radios[i].checked) {
-      seleccionado = true;
-      break;
+    var seleccionado = false;
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        seleccionado = true;
+        break;
+      }
     }
-  }
+  
+    // Si no se ha seleccionado ninguna opción, mostrar alerta
+    if (!seleccionado) {
+      alert("Debes seleccionar una opción en genero.");
+      return false;
+    }
+    
+    if (celular === "") {
+        alert("Por favor, ingresa tu número de celular.");
+        return ;
+    }
 
-  // Si no se ha seleccionado ninguna opción, mostrar alerta
-  if (!seleccionado) {
-    alert("Debes seleccionar una opción en genero.");
-    return false;
-  }
+    // Validación solo numeros
 
-  //Validar Numero de Celular
+    if (!/^[0-9]+$/.test(celular)) {
+      this.value = "";
+      alert("El Celular debe contener solo números.");
+      return;
+    }
 
-  if (celular === "") {
-    alert("Por favor, ingresa tu número de celular.");
-    return;
-  }
-
-  // Validación solo numeros
-
-  if (!/^[0-9]+$/.test(celular)) {
-    this.value = "";
-    alert("El Celular debe contener solo números.");
-    return;
-  }
-
-  // Validar longitud mínima de 9 caracteres
-  if (celular.length < 8) {
-    alert("El Celular debe tener al menos 8 caracteres.");
-    return;
-  }
-
-  // --Validación Contraseña--
-
-  // Validar contraseña
-  if (contrasena.length < 8) {
-    alert("La contraseña debe tener al menos 8 caracteres.");
-    return;
-  }
-
-  // Validar presencia de una letra
-  if (!/[a-zA-Z]/.test(contrasena)) {
-    alert("La contraseña debe contener al menos una letra.");
-    return;
-  }
-
-  // Validar presencia de un número
-  if (!/[0-9]/.test(contrasena)) {
-    alert("La contraseña debe contener al menos un número.");
-    return;
-  }
-
-  // Validar presencia de algún símbolo
-  if (!/[^a-zA-Z0-9]/.test(contrasena)) {
-    alert("La contraseña debe contener al menos un símbolo.");
-    return;
-  }
-
-  // --Validación Contraseña repetida--
-
-  if (contrasena !== repetirContrasena) {
-    alert("Las contraseñas no coinciden.");
-    return;
-  }
-
-  // Si todos los campos son válidos, se puede enviar el formulario
-  return true;
+    // Validar longitud mínima de 9 caracteres
+    if (celular.length < 8) {
+      alert("El Celular debe tener al menos 8 caracteres.");
+      return;
+    }
+  
+    if (correoElectronico.indexOf("@") === -1 || correoElectronico.indexOf(".") === -1) {
+        alert("El correo electrónico debe contener un símbolo de arroba (@) y un punto (.)");
+        return ;
+      }
+  
+  
+    // Validar contraseña 
+    if (contrasena.length < 8) {
+        alert("La contraseña debe tener al menos 8 caracteres.");
+        return ;
+    }
+    
+      // Validar presencia de una letra
+      if (!/[a-zA-Z]/.test(contrasena)) {
+        alert("La contraseña debe contener al menos una letra.");
+        return ;
+    }
+    
+      // Validar presencia de un número
+    if (!/[0-9]/.test(contrasena)) {
+        alert("La contraseña debe contener al menos un número.");
+        return ;
+    }
+    
+    // Validar presencia de algún símbolo
+    if (!/[^a-zA-Z0-9]/.test(contrasena)) {
+        alert("La contraseña debe contener al menos un símbolo.");
+        return ;
+    }
+  
+    if (contrasena !== repetirContrasena) {
+      alert("Las contraseñas no coinciden.");
+      return ;
+    }
+  
+    // Si todos los campos son válidos, se puede enviar el formulario
+    return true;
 }
+    
+    function validarLogin() {
+        var usuario = document.getElementById("loginName").value;
+        var contraseña = document.getElementById("loginPassword").value;
+      
+        // Validar que los campos no estén vacíos
+        if (usuario === "" || contraseña === "") {
+          alert("Por favor, ingresa el usuario y la contraseña.");
+          return false;
+        }
+      
+        // Validar las credenciales
+        // Aquí puedes agregar tu lógica para comparar las credenciales ingresadas con las válidas
+        if (usuario === "na.rubilar@gmail.com" && contraseña === "narubilar123") {
+          alert("Inicio de sesión exitoso.");
+          window.location.href = "index.html";
+          return true;
+        } else {
+          alert("Usuario o contraseña incorrectos. Por favor, intenta nuevamente.");
+          return false;
+        }
+    }
 
+/*
+
+    // Extra small devices (phones, 600px and down) 
+    @media only screen and (max-width: 600px) {
+    img {
+        width: 20%;
+    }
+
+    
+    }
+
+    // Small devices (portrait tablets and large phones, 600px and up) 
+    @media only screen and (min-width: 600px) {
+    img {
+        width: 20%;
+    }
+    }
+    // Medium devices (landscape tablets, 768px and up) 
+    @media only screen and (min-width: 768px) {
+    img {
+        width: 90%;
+    }
+    } 
+
+*/
+
+/*
+$(window).on("resize", function() {
+    ajustarImagenesResponsivas();
+  });
+  
+  $(document).ready(function() {
+    ajustarImagenesResponsivas();
+  });
+  
+  function ajustarImagenesResponsivas() {
+    $("img").each(function() {
+      $(this).css("max-width", "100%");
+      $(this).css("height", "auto");
+    });
+  }
+*/
+ 
