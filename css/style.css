@@ -210,7 +210,9 @@ gap: 30px;
     --bs-btn-hover-border-color: #254e63;
 }
 
-
+.ic_icon{
+    background-color: #346b8692;
+}
 
 /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
